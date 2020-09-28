@@ -18,8 +18,8 @@ balloons.forEach((balloon) => {
     })
 });
 
-animations.forEach((animation) => {
-    animation.onfinish = () => {
-        window.location.href = failURL;
-    }
+balloons.forEach((balloon) => {
+    balloon.animation.onfinish =() => {
+		window.location.href = failURL;}
+    
 });
